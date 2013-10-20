@@ -295,7 +295,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.gralloc.enable_fb_ubwc=1 \
     vendor.video.disable.ubwc=1 \
     debug.sf.enable_hwc_vds=1 \
-    persist.sys.wfd.nohdcp=1
+    persist.sys.wfd.nohdcp=1 \
+    persist.sys.wfd.virtual=0
 
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -312,3 +313,4 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1 \
     persist.sys.sf.disable_blurs=1 \
     ro.sf.blurs_are_expensive=1
+
