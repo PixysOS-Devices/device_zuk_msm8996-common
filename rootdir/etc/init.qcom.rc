@@ -501,7 +501,7 @@ on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
 
 on property:sys.shutdown.requested=*
-    stop vendor.per_proxy
+    stop per_proxy
     stop vendor.ims_rtp_daemon
 
 service thermal-engine /vendor/bin/thermal-engine -c /vendor/etc/thermal-engine.conf
