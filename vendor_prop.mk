@@ -166,7 +166,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sib16_support=1 \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
-    persist.sys.fflag.override.settings_network_and_internet_v2=true
+    persist.sys.fflag.override.settings_network_and_internet_v2=true \
+    persist.radio.calls.on.ims=1 \
+    persist.dbg.ims_volte_enable=1
 
 # Surfaceflinger
 PRODUCT_PROPERTY_OVERRIDES += \
