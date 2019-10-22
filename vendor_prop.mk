@@ -160,7 +160,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1 \
     persist.vendor.radio.sib16_support=1 \
     persist.vendor.radio.custom_ecc=1 \
-    persist.vendor.radio.rat_on=combine
+    persist.vendor.radio.rat_on=combine \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 # Surfaceflinger
 PRODUCT_PROPERTY_OVERRIDES += \
