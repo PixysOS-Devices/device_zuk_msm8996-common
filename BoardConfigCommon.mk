@@ -201,7 +201,7 @@ TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 VENDOR_SECURITY_PATCH := 2018-11-05
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/sepolicy.mk
+#include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy-minimal
 
