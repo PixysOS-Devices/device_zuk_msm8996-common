@@ -10,3 +10,10 @@ allow init hwservicemanager:binder { transfer };
 allow init default_android_hwservice:hwservice_manager { add };
 allow init hal_perf_hwservice:hwservice_manager { find };
 allow init hal_perf_default:binder { call };
+
+allow init tee_device:chr_file { write };
+allow init tee_device:chr_file { open };
+allow init tee_device:chr_file { ioctl };
+allow init tee_device:chr_file { read };
+allow init ion_device:chr_file { read };
+allow init ion_device:chr_file { open };
