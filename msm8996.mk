@@ -135,7 +135,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     camera.msm8996 \
     mm-qcamera-app \
-    libmm-qcamera
+    libmm-qcamera \
+    libfui
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
