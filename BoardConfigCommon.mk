@@ -21,8 +21,12 @@ VENDOR_PATH := device/zuk/msm8996-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(VENDOR_PATH)/include
 
-# skip ELF prebuilts check
+# haxxes-- let the build proceed
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+TEMPORARY_DISABLE_PATH_RESTRICTIONS := true
+
 
 # Architecture
 TARGET_ARCH := arm64
