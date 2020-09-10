@@ -267,6 +267,8 @@ PRODUCT_PACKAGES += \
 
 # Libhw
 PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
 
