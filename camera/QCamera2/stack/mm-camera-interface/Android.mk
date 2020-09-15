@@ -27,14 +27,14 @@ ifneq (,$(filter msm8996 msmcobalt,$(TARGET_BOARD_PLATFORM)))
 endif
 
 LOCAL_CFLAGS += -D_ANDROID_ -DQCAMERA_REDEFINE_LOG
-LOCAL_EXPORT_C_INCLUDES := mm-camera-interface
-LOCAL_C_INCLUDES += $(LOCAL_PATH)../common/cam_intf.h
-LOCAL_C_INCLUDES += $(LOCAL_PATH)../common/cam_types.h
+LOCAL_COPY_HEADERS_TO := mm-camera-interface
+LOCAL_COPY_HEADERS += ../common/cam_intf.h
+LOCAL_COPY_HEADERS += ../common/cam_types.h
 
 LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/inc \
     $(LOCAL_PATH)/../common \
-    hardware/qcom/media/msm8996/media/mm-core/inc \
+    $(call project-path-for,qcom-media)/media/mm-core/inc \
     system/media/camera/include \
 
 LOCAL_CFLAGS += -DCAMERA_ION_HEAP_ID=ION_IOMMU_HEAP_ID
