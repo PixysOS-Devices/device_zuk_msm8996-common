@@ -276,8 +276,6 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
-
-
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -344,7 +342,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.4 \
     android.hardware.radio@1.2 \
-    android.hardware.secure_element@1.0 \
     android.hardware.radio.config@1.0 \
     librmnetctl \
     libxml2
@@ -362,15 +359,10 @@ PRODUCT_PACKAGES += \
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common_system \
-    ims-ext-common \
-    ims_ext_common.xml \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
+    ims-ext-common_system \
     telephony-ext
 
 # TextClassifier
