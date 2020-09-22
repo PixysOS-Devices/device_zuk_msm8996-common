@@ -303,3 +303,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Hint expensive blurs for device with larger display
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.blurs_are_expensive=1
+
+# ZRAM writeback
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
