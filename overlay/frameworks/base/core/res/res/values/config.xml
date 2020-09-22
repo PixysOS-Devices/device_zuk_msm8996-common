@@ -1126,4 +1126,15 @@
     <!-- Whether device supports wifi ap mac randomization -->
     <bool name="config_wifi_ap_randomization_supported">false</bool>
 
+  <!-- If the Storage Manager settings are enabled. -->
+    <bool name="config_storage_manager_settings_enabled">true</bool>
+
+  <!-- Whether or not homepage should display user's account avatar -->
+    <bool name="config_show_avatar_in_homepage">true</bool>
+
+  <!-- Whether to show Enhanced Connectivity switch in Developer Options -->
+    <bool name="config_show_enhanced_connectivity">true</bool>
+
+    <!-- When true enable gesture setting. -->
+    <bool name="config_gesture_settings_enabled">true</bool>
 </resources>
