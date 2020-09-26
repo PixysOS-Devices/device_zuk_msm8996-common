@@ -236,8 +236,8 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service
 
 # HW crypto
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+#PRODUCT_PACKAGES += \
+#    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -379,13 +379,13 @@ PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
 # usb debugging on boot only for eng builds
-ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
+#ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
   PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
     ro.adb.secure=0 \
     ro.secure=0 \
     ro.debuggable=1
-endif
+#endif
 
 # Verity
 PRODUCT_SYSTEM_VERITY_PARTITION=/dev/block/bootdevice/by-name/system
