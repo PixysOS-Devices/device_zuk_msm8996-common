@@ -301,6 +301,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
+    libstagefright_enc_common \
     libextmedia_jni \
     libOmxAacEnc \
     libOmxAmrEnc \
