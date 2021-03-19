@@ -100,6 +100,11 @@ function blob_fixup() {
     vendor/lib64/lib-dplmedia.so)
         patchelf --remove-needed libmedia.so "${2}"
         ;;
+
+	# Hex edit libwfdmmsink.so to link missing symbols
+        lib/libwfdmmsink.so)
+        patchelf --add-needed "libshim_wfd.so" "${2}"
+	;;
     esac
 }
 
